@@ -1,6 +1,8 @@
 // fetch is not part of js
 // a browser based API
 
+// console.log('clientside js')
+
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-one");
