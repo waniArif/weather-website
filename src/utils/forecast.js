@@ -6,7 +6,7 @@ const forecast = (lat, long, callback) => {
     lat +
     "," +
     long +
-    "&units=f";
+    "&units=m";
   request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback("Unable to connect to weather service", undefined);
@@ -18,7 +18,8 @@ const forecast = (lat, long, callback) => {
         body.current.weather_descriptions[0] +
           "," +
           " Temperature is: " +
-          body.current.temperature
+          body.current.temperature +
+          " Celsius"
       );
     }
   });
