@@ -33,15 +33,16 @@ app.get("", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Robot",
+
+    name: "Wani Arif Rasool",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    helpText: "This is some helpful text.",
+    helpText: "Please reach for help at waniarifrasool@gmail.com.",
     title: "Help",
-    name: "help me!",
+    name: "Wani Arif Rasool",
   });
 });
 
@@ -88,7 +89,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404 help",
-    name: "war",
+    name: "Wani Arif Rasool",
     message: "help page not found!",
   });
 });
@@ -96,7 +97,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "war",
+    name: "Wani Arif Rasool",
     message: "404 PAGE NOT FOUND",
   });
 });
